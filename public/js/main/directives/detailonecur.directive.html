@@ -1,7 +1,7 @@
 <div class="col s12 m4 l3 detailcur">
-    <strong>{{ currencyData.name }} ({{ currencyData.symbol }})</strong>
+    <strong>{{ currencyData.name }} ({{ currencyData.symbol  }})</strong>
     <p><span class="iii">TOP :</span>  {{ currencyData.rank }}</p>
-    <p><span class="iii">Giá USD :</span>  {{ currencyData.price_usd}}</p>
+    <p><span class="iii">Giá USD :</span>  {{ currencyData.price_usd | currency }}</p>
     <p><span class="iii">Giá BTC :</span>  {{ currencyData.price_btc }}</p>
     <!-- <p>24h_volume_usd : {{ currencyData.24h_volume_usd}}</p> -->
     <p><span class="iii">Tổng giá trị :</span>  {{ currencyData.market_cap_usd | currency}}</p>
