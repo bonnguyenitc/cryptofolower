@@ -5,7 +5,7 @@ form.addEventListener('submit',  (e) => {
     const choice = document.querySelector('input[name=crypto]:checked').value;
     const data = { crypto: choice };
 
-    fetch('http://localhost:3000/pull', {
+    fetch('https://cryptofolower.herokuapp.com/pull', {
         method: 'post',
         body: JSON.stringify(data),
         headers: new Headers({
@@ -18,7 +18,7 @@ form.addEventListener('submit',  (e) => {
     e.preventDefault();
 });
 
-fetch('http://localhost:3000/pull/dl')
+fetch('https://cryptofolower.herokuapp.com/pull/dl')
 .then(res => res.json())
 .then(data => {
     const votes = data.votes;
