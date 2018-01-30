@@ -1,0 +1,15 @@
+<div class="col s12 m4 l3 detailcur">
+    <strong>{{ currencyData.name }} ({{ currencyData.symbol }})</strong>
+    <p><span class="iii">TOP :</span>  {{ currencyData.rank }}</p>
+    <p><span class="iii">Giá USD :</span>  {{ currencyData.price_usd}}</p>
+    <p><span class="iii">Giá BTC :</span>  {{ currencyData.price_btc }}</p>
+    <!-- <p>24h_volume_usd : {{ currencyData.24h_volume_usd}}</p> -->
+    <p><span class="iii">Tổng giá trị :</span>  {{ currencyData.market_cap_usd | currency}}</p>
+    <p><span class="iii">Lượng trao đổi :</span>  {{ currencyData.available_supply | currency}}</p>
+    <p><span class="iii">Tổng số lượng :</span>  {{ currencyData.total_supply | currency : ""}}</p>
+    <p><span class="iii">Số lượng tối đa :</span>  {{ currencyData.max_supply | currency : ""}}</p>
+    <p><span class="iii">Giá sau 1 giờ :</span>  {{ currencyData.percent_change_1h}} %</p>
+    <p><span class="iii">Giá sau 1 ngày :</span> {{ currencyData.percent_change_24h}} %</p>
+    <p><span class="iii">Giá sau 7 ngày :</span> {{ currencyData.percent_change_7d}} %</p>
+    <p><span class="iii">Cập nhật cuối :</span>  {{ timeUpdate | date : 'd/MM/yyyy h:mm:ss a' }}</p>
+</div>

@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav .brand-logo {
+    padding-left: 15px;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+.nav-wrapper, .page-footer {
+    background-color: #424242;
+}
+.cryptocurrencies{
+    padding: 5px;
+}
+.marketcap{
+    padding: 5px;
+}
+.totalbar{
+    border: 1px solid black;
+}
+.row{
+    margin-bottom: 0px;
+}
+.detailcur{
+    
+    background-color: #424242;
+    border: 10px solid white;
+    /* justify-content: center; */
+    color: rgb(238, 218, 218);
+    font-size: 14px;
+}
+.currency-list{
+    flex-direction: column;
+
+}
+.iii {
+    font-family: Droid Sans Mono,monospace;
+    color: rgb(40, 175, 228);
+    font-size: 14px;
+}

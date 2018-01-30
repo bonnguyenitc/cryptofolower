@@ -1,0 +1,14 @@
+<global-data-bar global-data="data"></global-data-bar>
+<div class="row">
+        <div class="col s12 center">
+            <h2>TOP 100</h2>
+            <div class="container-fluid">
+                <search-bar key-search = "searchKey"></search-bar>
+            </div>
+            <div class="container-fluid">
+                <div class="row currency-list">
+                    <detail-one-cur currency-data="data1" time-update="data100.dataT" ng-repeat="data1 in data100.dataC | filter:searchKey as results track by data1.name" ></detail-one-cur>
+                </div>
+            </div>
+        </div>
+</div>

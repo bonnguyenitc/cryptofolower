@@ -1,0 +1,10 @@
+<div class="totalbar">
+    <div class="row">
+        <div class="col s6 cryptocurrencies">          
+            Cryptocurrencies Active: <strong>{{globalData.active_currencies}}</strong> / Markets: <strong>{{globalData.active_markets}}</strong> 
+        </div>
+        <div class="col s6 marketcap">
+            Market Cap: <strong>{{globalData.total_market_cap_usd | currency}}</strong> / 24h Vol: <strong>{{globalData.total_24h_volume_usd | currency}}</strong> / BTC Dominance: <strong>{{globalData.bitcoin_percentage_of_market_cap }}%</strong> 
+        </div>
+    </div>
+</div>

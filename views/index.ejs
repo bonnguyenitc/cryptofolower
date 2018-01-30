@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" ng-app="cryptoApp" ng-controller="masterController">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="public/css/materialize.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/style.css">
+    <title>{{tt.title}}</title>
+  </head>
+  <body>
+    <div id="container">         
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#/" class="brand-logo">BNG</a>
+                <a href="#/" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="/pull" >Bình chọn</a></li>
+                    <li><a href="#!blue">Components</a></li>
+                    <li><a href="#!green">Javascript</a></li>
+                    <li><a href="#!gray">Mobile</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="#!red" >Sass</a></li>
+                    <li><a href="#!blue">Components</a></li>
+                    <li><a href="#!green">Javascript</a></li>
+                    <li><a href="#!gray">Mobile</a></li>
+                </ul>
+            </div>
+        </nav>           
+    </div>
+    <div class="text-center">
+        <p class="text-center" ng-show="loading">
+                <span class="fa fa-spinner fa-spin fa-3x"></span>
+        </p>
+    </div>
+    <div id="content" >
+        <div ng-view></div>
+    </div>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+        
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="public/js/angular.min.js"></script>
+	<script type="text/javascript" src="https://code.angularjs.org/1.4.9/angular-route.min.js"></script>
+    <script src="public/js/main/app.js"></script>
+    <script src="public/js/main/services/globaldata.service.js"></script>
+    <script src="public/js/main/services/top100cur.service.js"></script>
+    <script src="public/js/main/directives/search.directive.js"></script>
+    <script src="public/js/main/directives/globaldata.directive.js"></script>
+    <script src="public/js/main/directives/detailonecur.directive.js"></script>
+    <script src="public/js/main/controllers/master.controller.js"></script>
+    <script src="public/js/main/controllers/home.controller.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+    <script src="public/js/materialize.min.js"></script>
+    <script src="public/js/myapp.js"></script>   
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <title>PULL</title>
+</head>
+<body>
+    <div class="container">
+        <h3 class="center">CRYPTO VOTE</h3>
+        <p>Vote for CRYPTO of YOU</p>
+        <form id="vote-form">
+            <p></p>
+                <input type="radio" name="crypto" id="btc" value="BTC">
+                <label for="btc">BITCOIN</label>
+            </p>
+            <p>
+                <input type="radio" name="crypto" id="eth" value="ETH">
+                <label for="eth">ETHEREUM</label>
+            </p>
+            <p>
+                <input type="radio" name="crypto" id="dbg" value="DGB">
+                <label for="dbg">DIGIBYTE</label>
+            </p>
+            <p>
+                <input type="radio" name="crypto" id="ltc" value="LTC">
+                <label for="ltc">LITECOIN</label>
+            </p>
+            <input type="submit" value="VOTE" class="btn">
+        </form>
+        <br><br>
+        <p id="chartTitle">Số lượt bình chọn</p>
+        <div id="chartContainer" style="height: 300px; width: 100%"></div>
+    </div>
+    
+    <script
+        src="http://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/4.2.2/pusher.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+    <script src="public/js/pusherm.js"></script>
+</body>
+</html>
