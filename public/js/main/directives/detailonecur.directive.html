@@ -1,15 +1,56 @@
-<div class="col s12 m4 l3 detailcur">
-    <strong>{{ currencyData.name }} ({{ currencyData.symbol  }})</strong>
+<div class="col s12 m4 l4 detailcur">
+    <strong class="nameCrypto">{{ currencyData.name }} ({{ currencyData.symbol  }})</strong>
     <p><span class="iii">TOP :</span>  {{ currencyData.rank }}</p>
     <p><span class="iii">Giá USD :</span>  {{ currencyData.price_usd | currency }}</p>
     <p><span class="iii">Giá BTC :</span>  {{ currencyData.price_btc }}</p>
-    <!-- <p>24h_volume_usd : {{ currencyData.24h_volume_usd}}</p> -->
+    <p><span class="iii">Giao dịch 24h :</span> {{ currencyData["24h_volume_usd"] | currency}}</p>
     <p><span class="iii">Tổng giá trị :</span>  {{ currencyData.market_cap_usd | currency}}</p>
-    <p><span class="iii">Lượng trao đổi :</span>  {{ currencyData.available_supply | currency}}</p>
-    <p><span class="iii">Tổng số lượng :</span>  {{ currencyData.total_supply | currency : ""}}</p>
-    <p><span class="iii">Số lượng tối đa :</span>  {{ currencyData.max_supply | currency : ""}}</p>
+    <p><span class="iii">Số coin lưu thông :</span>  {{ currencyData.available_supply | currency : ""}}</p>
+    <!-- <p><span class="iii">Tổng số lượng :</span>  {{ currencyData.total_supply | currency : ""}}</p>
+    <p><span class="iii">Số lượng tối đa :</span>  {{ currencyData.max_supply | currency : ""}}</p> -->
     <p><span class="iii">Giá sau 1 giờ :</span>  {{ currencyData.percent_change_1h}} %</p>
     <p><span class="iii">Giá sau 1 ngày :</span> {{ currencyData.percent_change_24h}} %</p>
     <p><span class="iii">Giá sau 7 ngày :</span> {{ currencyData.percent_change_7d}} %</p>
-    <p><span class="iii">Cập nhật cuối :</span>  {{ timeUpdate | date : 'd/MM/yyyy h:mm:ss a' }}</p>
+    <p><span class="iii">Cập nhật cuối :</span>  {{ timeUpdate | date : 'd/MM/yyyy' }}</p>
+    <!-- h:mm:ss a -->
+
+    <!-- // table style -->
+    <!-- <table class="responsive-table">
+        <tr>
+            <td><span class="iii">Giá USD :</span></td>
+            <td>{{ currencyData.price_usd | currency }}</td>
+        </tr>
+        <tr>
+            <td><span class="iii">Giá BTC :</span></td>
+            <td>{{ currencyData.price_btc }}</td>
+        </tr>
+        <tr>
+            <td><span class="iii">Giao dịch 24h :</span></td>
+            <td>{{ currencyData["24h_volume_usd"] | currency}}</td>
+        </tr>
+        <tr>
+            <td><span class="iii">Tổng giá trị :</span></td>
+            <td>{{ currencyData.market_cap_usd | currency}}</td>
+        </tr>
+        <tr>
+            <td><span class="iii">Số coin lưu thông :</span></td>
+            <td>{{ currencyData.available_supply | currency : ""}}</td>
+        </tr>
+        <tr>
+            <td><span class="iii">Giá sau 1 giờ :</span></td>
+            <td>{{ currencyData.percent_change_1h}}</td>
+        </tr>
+        <tr>
+            <td><span class="iii">Giá sau 1 ngày :</span></td>
+            <td>{{ currencyData.percent_change_24h}}</td>
+        </tr>
+        <tr>
+            <td><span class="iii">Giá sau 7 ngày :</span></td>
+            <td>{{ currencyData.percent_change_7d}}</td>
+        </tr>
+        <tr>
+            <td><span class="iii">Cập nhật cuối :</span></td>
+            <td>{{ timeUpdate | date : 'd/MM/yyyy' }}</td>
+        </tr>
+    </table> -->
 </div>
