@@ -1,4 +1,4 @@
-var socket = io.connect('http://localhost:3000');
+var socket = io.connect('https://cryptofolower.herokuapp.com/');
   socket.on('btcprice', function (data) {
        //console.log(data.result[0].Last);
        var txt = document.getElementById('pricebtc');
