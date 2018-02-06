@@ -17,7 +17,7 @@ require('./config/db');
 
 const app = express();
 // im socket io
-var server = require('http').Server(app);
+var server = require('http').createServer(app);
 var io = require('socket.io')(server);
 // REALTIME
 // io.on('connection', function (socket) {
